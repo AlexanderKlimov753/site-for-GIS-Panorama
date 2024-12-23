@@ -1,0 +1,45 @@
+.NewsFond{
+    display: flex;
+    justify-content: space-around;
+}
+
+.NewsFondImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.picNews {
+    margin-bottom: 10px;
+}
+
+.newsLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.allNewsLink {
+    margin-bottom: 10px;
+    color: #2196F3;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.allNewsLink::before{
+    background-image: url(../icons/icons8-длинная-стрелка-вправо-96.png);
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    height: 13px;
+    left: 85%;
+    margin-top: -5px;
+    position: absolute;
+    top: 7px;
+    transition: all .6s cubic-bezier(.19,1,.22,1) 0s;
+    width: 23px;
+}
+
+.linkNews {
+    margin-bottom: 10px;
+    color: #2196F3;
+} 

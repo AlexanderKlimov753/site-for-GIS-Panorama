@@ -1,0 +1,17 @@
+﻿.UseLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.UseLinksTitle {
+    text-align: center;
+    list-style-type: disc;
+}
+
+.UseLinksList {
+    list-style-type: disc;
+}
+
+.UseLinksList > li {
+    margin-bottom: 15px;
+}

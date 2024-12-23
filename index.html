@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="CSS/index.css">
+</head>
+
+<header>
+    <div class="container">
+        <div class="headerTop">
+            <div class="headerLogoTop">
+                <a href="#">
+                    <img src="" alt="logo" class="header__logo-pic">
+                    <span class="headerLogoTopText">Министерство чего там по чему-то там</span>
+                </a>
+            </div>
+
+            <button class="btnCab">Личный кабинет</button>
+            <div class="ModalCab" id="ModalCab">
+                <div class="modal">
+                    <form method="post" action="./PHP/auth.php" class="modalPost">
+                        <button type="button" title="Закрыть" class="modalClose">&times;</button>
+                        <div class="modal__subtitle">
+                            <div class="modalLogin">
+                                <label for="exampleFormControlInput1" class="form-label">Почта или номер телефона</label>
+                                <input type="text" class="form-control" id="FormControlInputEmail" name="login" placeholder="Почта или номер телефона">
+                            </div>
+                            <div class="modalPsw">
+                                <label for="exampleFormControlInput1" class="form-label">Пароль</label>
+                                <input type="password" class="form-control" id="FormControlInputText" name="password">
+                            </div>
+                        </div>
+                        <div class="modalBtns">
+                            <button class="modalBtnEnter" type="submit">Войти</button>
+                            <button class="modalBtnReg" type="button" onclick="window.location.href='./registration.html'">Зарегистрироваться</button>
+                        </div>
+                        <div class="modalFooter">
+                            <button type="button" title="Закрыть" class="cancelbtn">Закрыть</button>
+                            <span>Забыли <a href="#" class="modalFooterPsw">пароль?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="headerLogoBottom">
+                <a href="#" class="headerLogoLink">
+                    <img src="" alt="logo" class="header__logo-pic">
+                    <span class="headerLogoText">
+                        <span class="headerLogoText">Государственное бюджетное учреждение</span> <br>
+                        <span class="headerLogoText">? области</span> <br>
+                        <span class="headerLogoText">«Фонд пространственных данных ? области»</span> <br>
+                    </span>
+                </a>
+            </div>
+            <div class="headerLogoBottom Right">
+                <a href="tel:+7 955 228 1337 1488" class="headerTel">+7 955 228 1337 1488</a> <br>
+                <span class="headerBottomText">Индекс, Город</span> <br>
+                <span class="headerBottomText">Улица, дом, кабинет</span> <br>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="sidebar">
+    <a href="#" class="sidebarLogo">
+        <img src="" alt="logo" class="sidebar__logo-pic">
+    </a>
+    <div class="sidebarBurger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <a href="mailto:sano17493@gmail.com" class="sidebarEmail">Почта@почта.домен</a>
+    <div class="sidebarContent">
+        <h3>Геофонд чего-то там</h3>
+
+        <ul class="sidebarLink">
+            <li class="sidebarLink1">
+                <a href="#">Первая ссылка</a>
+            </li>
+            <li class="sidebarLink2">
+                <a href="#">Вторая ссылка</a>
+            </li>
+            <li class="sidebarLink3">
+                <a href="#">Третья ссылка</a>
+            </li>
+            <li class="sidebarLink4">
+                <a href="#">Четвертая ссылка</a>
+            </li>
+            <li class="sidebarLink5">
+                <a href="#">Пятая ссылка</a>
+            </li>
+        </ul>
+
+        <div class="sidebarFooter">
+            <div class="footerContent">
+                <div class="footerBlock">
+                    <div class="footerLine">
+                        <img src="" alt="">
+                    </div>
+                    <a href="tel:+7 955 228 1337 1488" class="footerTel">+7 955 228 1337 1488</a> <br>
+                    <a href="mailto:sano17493@gmail.com" class="sidebarFooterEmail">Почта@почта.домен</a> <br>
+                    <p class="footerText">Адрес:</p> <br>
+                    <p class="footerText">Индекс, город, </p> <br>
+                    <p class="footerText">улица, дом, кабинет</p> <br>
+                </div>
+                <div class="footerBlock">
+                    <div class="footerLine">
+                        <img src="" alt="">
+                    </div>
+                    <p class="footerText">Режим работы:</p> <br>
+                    <p class="footerText">Пн-чт 8:00-17:00</p> <br>
+                    <p class="footerText">Пт 8:00-16:00</p> <br>
+                    <p class="footerText">Обед 12:00-13:00</p> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <section class="mainMenu">
+        <div class="container containerMenu" id="containerMenu">
+            <a href="#" class="linkIndex active">Главная</a>
+            <a href="./acts.html" class="linkActs">Нормативные документы</a>
+            <a href="./UsefulResources.html" class="linkRes">Полезные ресуры</a>
+            <a href="./antiCor.html" class="linkCor">Противодействие коррупции</a>
+            <a href="./Contacts.html" class="linkCon">Контакты</a>
+            <a href="./Vacation.html" class="linkVac">Вакансии</a>
+        </div>
+    </section>
+
+    <section class="aboutFond">
+    <div class="container containerFond">
+            <h1 class="aboutFondTitle">О фонде</h1>
+            <img src="" alt="line">
+            <div class="fondContent" id="fondContent">
+                <div class="fondContentLeft">
+                    <p class="fondContentText">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Sed accusantium ducimus tempore doloribus ad iure eveniet molestias molestiae saepe!
+                        Voluptate, quis assumenda.
+                        Ad illum aliquam nobis numquam laboriosam, reiciendis modi suscipit praesentium ut quisquam quas
+                        repudiandae provident est saepe temporibus hic mollitia totam maiores rerum vel fugiat obcaecati
+                        cupiditate? Nam.
+                    </p>
+                    <ul class="fondLinks">
+                        <li class="fondLinkItem">
+                            <a href="#" class="fondLink">Пространственные данные и материалы</a>
+                        </li>
+                        <li class="fondLinkItem">
+                            <a href="#" class="fondLink">Передача данных в фонд</a>
+                        </li>
+                        <li class="fondLinkItem">
+                            <a href="#" class="fondLink">Градостроительная документация</a>
+                        </li>
+                        <li class="fondLinkItem">
+                            <a href="#" class="fondLink">ГИСОГД НСО</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fondContentRight">
+                    <div class="fondSlider">
+                        <div id="btnPrev">
+                            <img src="icons/icons8-шеврон-влево-в-круге-50.png" alt="btnPrev"
+                                 class="btnPrev">
+                        </div>
+                        <div class="slide active">
+                            <div class="slideContent">
+                                <a href="#" class="slideLink">
+                                    <img src="icons/map-map-marker-icon_34394.png" alt="">
+                                    <h3 class="slideLinkBottom">Какой-то текст 1</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slideContent">
+                                <a href="#" class="slideLink">
+                                    <img src="icons/27_104849.png" alt="">
+                                    <h3 class="slideLinkBottom">Какой-то текст 2</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slideContent">
+                                <a href="#" class="slideLink">
+                                    <img src="icons/travel-holiday-vacation-310_89073.png" alt="">
+                                    <h3 class="slideLinkBottom">Какой-то текст 3</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="btnNext">
+                            <img src="./icons/icons8-шеврон-вправо-в-круге-50.png" alt="btnNext"
+                                 class="btnNext">
+                        </div>
+                    </div>
+                    <div class="sliderDots">
+                        <span class="sliderDot active" onclick="currentSlide(0)"></span>
+                        <span class="sliderDot" onclick="currentSlide(1)"></span>
+                        <span class="sliderDot" onclick="currentSlide(2)"></span>
+                    </div>
+                    <div class="contentLink">
+                        <a href="#" class="projectLink" ::before>Все проекты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="historyFond">
+        <div class="container containerHistory">
+            <a href="#" ::before class="historyLink">История фонда</a>
+        </div>
+    </div>
+
+    <section class="NewsFond">
+        <div class="container containerNews">
+            <div class="NewsFondImages">
+                <a href="" target="_blank">
+                    <img src="" alt="picNews" class="picNews">
+                </a>
+                <a href="" target="_blank">
+                    <img src="" alt="picNews" class="picNews">
+                </a>
+            </div>
+            <div class="newsLinks">
+                <a href="#" class="allNewsLink" ::before>Все новости</a>
+                <a href="№" class="linkNews">Ссылка на новость 1</a>
+                <a href="№" class="linkNews">Ссылка на новость 2</a>
+                <a href="№" class="linkNews">Ссылка на новость 3</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="Map">
+        <div class="container containerMap">
+            <h2 class="mapHeader">Кемеровская область</h2>
+            <img src="" alt="line">
+            <div class="maps">
+            </div>
+        </div>
+    </section>
+
+    <section class="linksAndFields">
+        <div class="container containerlinks">
+            <div class="linksBlock">
+                <ul class="linksList">
+                    <li class="link" ::before>
+                        <a href="#"> Нормативные документы</a>
+                    </li>
+                    <li class="link" ::before>
+                        <a href="#">Полезные ресуры</a>
+                    </li>
+                    <li class="link" ::before>
+                        <a href="#">Противодействие коррупции</a>
+                    </li>
+                    <li class="link" ::before>
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="link" ::before>
+                        <a href="#">Вакансии</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fieldsBlock">
+                <form action="#" method="POST">
+                    <label class="formInputName">
+                        <input type="text" placeholder="Имя" name="fieldName" class="fieldName">
+                    </label>
+                    <div class="fieldsForms">
+                        <label class="formInput">
+                            <input type="text" placeholder="E-Mail" name="fieldEmail" class="fieldEmail">
+                        </label>
+                        <label class="formInput">
+                            <input type="tel" value="+7" name="fieldPhone" class="fieldPhone">
+                        </label>
+                    </div>
+                    <label class="formArea">
+                        <textarea name="fieldArea" cols="70" rows="8"></textarea>
+                    </label>
+                    <div class="fieldsBtns">
+                        <label class="formFile">
+                            <input type="file" name="LoadFile" value="" class="LoadFile">
+                            <span ::before>
+                                Прикрепить файл
+                            </span>
+                        </label>
+                        <button type="submit" title="Отправить" class="filedSend">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-to-top hidden">
+        <img src="./icons/uparrowbutton_87886.png" alt="">
+      </button>
+
+    <footer>
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerTopLogo">
+                    <img src="" alt="logo">
+                </div>
+                <div class="footerContent">
+                    <div class="footerBlock">
+                        <div class="footerLine">
+                            <img src="" alt="">
+                        </div>
+                        <a href="tel:+7 955 228 1337 1488" class="footerTel">+7 955 228 1337 1488</a> <br>
+                        <a href="mailto:sano17493@gmail.com" class="footerEmail">Почта@почта.домен</a> <br>
+                        <p class="footerText">Юридический адрес:</p> <br>
+                        <p class="footerText">Индекс, город, </p> <br>
+                        <p class="footerText">улица, дом, кабинет</p> <br>
+                    </div>
+                    <div class="footerBlock">
+                        <div class="footerLine">
+                            <img src="" alt="">
+                        </div>
+                        <p class="footerText">Режим работы:</p> <br>
+                        <p class="footerText">Пн-чт 8:00-17:00</p> <br>
+                        <p class="footerText">Пт 8:00-16:00</p> <br>
+                        <p class="footerText">Обед 12:00-13:00</p> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottomLink">
+                    <a href="#" target="_blank" class="VKlink">
+                        <img src="icons/pngwing.com.png" alt="VKlogo" class="imgVKlink">
+                    </a>
+                </div>
+                <div class="footerBottomText">
+                    © Государственное бюджетное учреждение ? области «Фонд пространственных данных ? области». ?—2023
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/goToTop.js"></script>
+</body>
+
+</html>

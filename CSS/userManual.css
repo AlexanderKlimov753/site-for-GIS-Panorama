@@ -1,0 +1,17 @@
+﻿.userManual {
+    display: flex;
+    flex-direction: column;
+}
+
+.userManualTitle {
+    text-align: center;
+    list-style-type: disc;
+}
+
+.userManualList {
+    list-style-type: disc;
+}
+
+.userManualList > li {
+    margin-bottom: 15px;
+}

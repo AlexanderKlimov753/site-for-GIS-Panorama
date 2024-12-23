@@ -1,0 +1,86 @@
+.link {
+    margin-bottom: 10px;  
+    color: #2196F3;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.link::before {
+    background-image: url(../icons/icons8-длинная-стрелка-вправо-96.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: "";
+    position: absolute;
+    height: 30px;
+    left: -40px;
+    top: -6px;
+    width: 30px;
+}
+
+.link:hover {
+    color: #2196F3;
+    transform: scale(1.2) perspective(1px)
+}
+
+.link a {
+    margin-bottom: 10px;  
+    color: #2196F3;
+}
+
+.linksAndFields {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.fieldsForms {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    height: 34px;
+    padding-left: 10px;
+    width:0px;
+}
+
+.fieldPhone {
+
+    padding-left: 5px;
+}
+
+.fieldEmail {
+    padding-right: 30%;
+}
+
+.fieldsBtns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formFile {
+    align-items: center;
+    color: #939393;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 1em;
+    width: 0px;
+}
+
+.LoadFile {
+    margin-right: 50px;
+    border: none;
+    padding: 0px;
+    margin-right: 5px;
+}
+
+.filedSend {
+    background-color: #4d76b5;
+    color: #fff;
+    cursor: pointer;
+    width: 48%;
+}
+

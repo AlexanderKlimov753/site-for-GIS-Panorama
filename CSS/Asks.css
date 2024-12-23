@@ -1,0 +1,17 @@
+﻿.Asks {
+    display: flex;
+    flex-direction: column;
+}
+
+.AsksTitle {
+    text-align: center;
+    list-style-type: disc;
+}
+
+.AsksList {
+    list-style-type: disc;
+}
+
+.AsksList > li {
+    margin-bottom: 15px;
+}

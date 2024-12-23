@@ -1,0 +1,9 @@
+.actsList {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+}
+
+.actsListItem {
+  margin-bottom: 15px;
+}

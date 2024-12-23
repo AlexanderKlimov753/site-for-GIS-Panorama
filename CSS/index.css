@@ -1,0 +1,255 @@
+@import "./modal.css";
+@import "./aboutFond.css";
+@import "./NewsFond.css";
+@import "./Map.css";
+@import "./linksAndFields.css";
+@import "./sidebar.css";
+@import "./acts.css";
+@import "./UsefulResources.css";
+@import "./antiCor.css";
+@import "./Contacts.css";
+@import "./Vacation.css";
+@import "./MaterialsAndInformation.css";
+@import "./pricelist.css";
+@import "./Asks.css";
+@import "./UseLinks.css";
+@import "./userManual.css";
+@import "./registration.css";
+@import "./auth.css";
+@import "./feedback.css";
+@import "./fileSharing.css";
+@import "./services.css";
+@import "./orders.css";
+
+/** {
+  margin: 0;
+  padding: 0;
+}*/
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 21px;
+}
+
+.textContent {
+  font-size: 15px;
+}
+
+/* header */
+
+header {
+  background-color: #f1e3e3;
+  /*
+  position: fixed;
+  top: 0;
+  width: 100%;
+  */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 0 90px;
+  width: 100%;
+  height: auto;
+}
+
+ .containerNews, .containerlinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 50px 0;
+}
+
+.headerLogoTop {
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  transition: all 1s ease;
+}
+
+.headerLogoLink {
+  align-items: center;
+  display: flex;
+}
+
+.headerLogoTop:hover {
+  background-color: #ddd;
+  transform: scale(1.10) perspective(1px)
+}
+
+.header__logo-pic {
+  margin-right: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.btnCab {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 5px 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btnCab {
+  border-color: #2196F3;
+  color: dodgerblue;
+  transition: all 1s ease;
+}
+
+.btnCab:hover {
+  background: #2196F3;
+  color: white;
+  transform: scale(1.10) perspective(1px)
+}
+
+.btn_link:hover {
+  color: white;
+}
+
+.headerBottom {
+align-items: center;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+/*margin-bottom: 50px;*/
+margin-top: 20px;
+}
+
+.headerBottomText {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.headerLogoText {
+  font-weight: 700;
+}
+
+.Right {
+  text-align: end;
+}
+
+.headerTel {
+  color: #2196F3;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.headerLogoText {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.aboutFondTitle, .mapHeader {
+  text-align: left;
+}
+
+/*меню*/
+
+.containerMenu {
+  overflow: hidden;
+  /*
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  position: fixed;
+  top: 200px;
+  width: 100%;
+  */
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.containerMenu a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  font-size: 19px;
+  }
+
+.containerMenu a:hover {
+  background-color: #000; 
+  color :white
+}
+
+.containerMenu > .active {
+  /*background-color: #4CAF50;*/
+  border: 3px solid #e31111; /*#ddd;*/
+  border-left-color: transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-radius: 4px 4px 0 0;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 7rem;
+  bottom: 2rem;
+  border-radius: 100%;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  background-color: transparent;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+/* footer */
+.footerTop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  align-items: center;
+}
+
+.footerBottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  float: left;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.footerBottomText {
+  width: 75%;
+  float: right;
+  text-align: justify;
+}
+
+.imgVKlink {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.footerEmail {
+  color: #2d65b8;
+  position: absolute;
+  font-size: larger;
+}

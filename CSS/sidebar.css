@@ -1,0 +1,183 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5%;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    background-color: lightgrey;
+    position: fixed;
+}
+
+.sidebarLogo {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    top: 40px;
+}
+
+.sidebarBurger {
+    align-items: flex-start;
+    padding: 0px;
+    gap: 9px;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    top: 130px;
+}
+
+.sidebarBurger.change {
+    align-items: center;
+    padding: 0px;
+    gap: 0px;
+    position: absolute;
+    width: 43px;
+    height: 40px;
+    top: 100px;
+    z-index: 3;
+    cursor: pointer;
+    position: fixed;
+    top: 130px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #af1212;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sidebarContent {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	top: 0px;
+    right: 0;
+    margin: 0;
+	width: 25%;
+	height: 100%;
+    transform: translateX(1px);
+	transition: transform 0.5s ;
+    z-index:2; 
+    background: #A6C9FF;
+    justify-content: center;
+}
+
+.sidebarContent h3 {
+    display: block;
+    margin: 0 auto;
+    font-size: 25px;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.sidebarContent a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 45px;
+    padding-top: 33px;
+}
+
+.sidebarContent.active{
+    visibility: visible;
+    padding-left: 50px;
+}
+
+.sidebarContent.active {
+	transform: translateX(0);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+}
+
+.sidebarContent li {
+	list-style-type: none;
+    padding-bottom: 39px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.sidebarContent {
+    visibility: hidden;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+
+.footerBlock {
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+a.footerTel {
+    color: #0daee9;
+    text-decoration: none;
+    list-style: none;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.footerText {
+    padding: 0px;
+    font-family: Montserrat,sans-serif;
+    font-style: normal;
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4c575b;
+    text-align: center;
+    margin: 0;
+}
+
+.sidebarEmail {
+    bottom: 20px;
+    left: 45%;
+    color: #2d65b8;
+    position: absolute;
+    transform: scale(-1);
+    writing-mode: vertical-lr;
+    font-size: larger;
+}
+
+a.sidebarFooterEmail {
+    color: #2d65b8;
+    font-size: larger;
+    padding-top: 0px;
+    line-height: 30px;
+}

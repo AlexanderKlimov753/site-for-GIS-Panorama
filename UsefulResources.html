@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Тест</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/UsefulResources.css">
+</head>
+
+<header>
+    <div class="container">
+        <div class="headerTop">
+            <div class="headerLogoTop">
+                <a href="#">
+                    <img src="" alt="logo" class="header__logo-pic">
+                    <span class="headerLogoTopText">Министерство чего там по чему-то там</span>
+                </a>
+            </div>
+
+            <button class="btnCab">Личный кабинет</button>
+            <div class="ModalCab" id="ModalCab">
+                <div class="modal">
+                    <button type="button" title="Закрыть" class="modalClose">&times;</button>
+                    <div class="modal__subtitle">
+                        <div class="modalLogin">
+                            <label for="exampleFormControlInput1" class="form-label">Логин или номер телефона</label>
+                            <input type="email" class="form-control" id="FormControlInputEmail"
+                                   placeholder="name@example.com">
+                        </div>
+                        <div class="modalPsw">
+                            <label for="exampleFormControlInput1" class="form-label">Пароль</label>
+                            <input type="text" class="form-control" id="FormControlInputText">
+                        </div>
+                    </div>
+                    <div class="modalBtns">
+                        <button class="modalBtnEnter">
+                            <a href="#" class="btn_link">Войти</a>
+                        </button>
+                        <button class="modalBtnReg">
+                            <a href="./registration.html" class="btn_link">Зарегистрироваться</a>
+                        </button>
+                    </div>
+                    <div class="modalFooter">
+                        <button type="button" title="Закрыть" class="cancelbtn">Закрыть</button>
+                        <span>Забыли <a href="#" class="modalFooterPsw">пароль?</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerBottom">
+            <div class="headerLogoBottom">
+                <a href="#" class="headerLogoLink">
+                    <img src="" alt="logo" class="header__logo-pic">
+                    <span class="headerLogoText">
+                        <span class="headerLogoText">Государственное бюджетное учреждение</span> <br>
+                        <span class="headerLogoText">? области</span> <br>
+                        <span class="headerLogoText">«Фонд пространственных данных ? области»</span> <br>
+                    </span>
+                </a>
+            </div>
+            <div class="headerLogoBottom Right">
+                <a href="tel:+7 955 228 1337 1488" class="headerTel">+7 955 228 1337 1488</a> <br>
+                <span class="headerBottomText">Индекс, Город</span> <br>
+                <span class="headerBottomText">Улица, дом, кабинет</span> <br>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="sidebar">
+    <a href="#" class="sidebarLogo">
+        <img src="" alt="logo" class="sidebar__logo-pic">
+    </a>
+    <div class="sidebarBurger" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+    <a href="mailto:sano17493@gmail.com" class="sidebarEmail">Почта@почта.домен</a>
+    <div class="sidebarContent">
+        <h3>Геофонд чего-то там</h3>
+
+        <ul class="sidebarLink">
+            <li class="sidebarLink1">
+                <a href="#">Первая ссылка</a>
+            </li>
+            <li class="sidebarLink2">
+                <a href="#">Вторая ссылка</a>
+            </li>
+            <li class="sidebarLink3">
+                <a href="#">Третья ссылка</a>
+            </li>
+            <li class="sidebarLink4">
+                <a href="#">Четвертая ссылка</a>
+            </li>
+            <li class="sidebarLink5">
+                <a href="#">Пятая ссылка</a>
+            </li>
+        </ul>
+
+        <div class="sidebarFooter">
+            <div class="footerContent">
+                <div class="footerBlock">
+                    <div class="footerLine">
+                        <img src="" alt="">
+                    </div>
+                    <a href="tel:+7 955 228 1337 1488" class="footerTel">+7 955 228 1337 1488</a> <br>
+                    <a href="mailto:sano17493@gmail.com" class="sidebarFooterEmail">Почта@почта.домен</a> <br>
+                    <p class="footerText">Адрес:</p> <br>
+                    <p class="footerText">Индекс, город, </p> <br>
+                    <p class="footerText">улица, дом, кабинет</p> <br>
+                </div>
+                <div class="footerBlock">
+                    <div class="footerLine">
+                        <img src="" alt="">
+                    </div>
+                    <p class="footerText">Режим работы:</p> <br>
+                    <p class="footerText">Пн-чт 8:00-17:00</p> <br>
+                    <p class="footerText">Пт 8:00-16:00</p> <br>
+                    <p class="footerText">Обед 12:00-13:00</p> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+    <section class="mainMenu">
+        <div class="container containerMenu" id="containerMenu">
+            <a href="./index.html" class="linkIndex">Главная</a>
+            <a href="./acts.html" class="linkActs">Нормативные документы</a>
+            <a href="#" class="linkRes active">Полезные ресуры</a>
+            <a href="/antiCor.html" class="linkCor">Противодействие коррупции</a>
+            <a href="./Contacts.html" class="linkCon">Контакты</a>
+            <a href="./Vacation.html" class="linkVac">Вакансии</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="container usefulResources">
+            <ul>
+                <li>
+                    <a href="#">Полезный ресурс 1</a>
+                </li>
+                <li>
+                    <a href="#">Полезный ресурс 2</a>
+                </li>
+                <li>
+                    <a href="#">Полезный ресурс 3</a>
+                </li>
+                <li>
+                    <a href="#">Полезный ресурс 4</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footerTop">
+                <div class="footerTopLogo">
+                    <img src="" alt="logo">
+                </div>
+                <div class="footerContent">
+                    <div class="footerBlock">
+                        <div class="footerLine">
+                            <img src="" alt="">
+                        </div>
+                        <a href="tel:+7 955 228 1337 1488" class="footerTel">+7 955 228 1337 1488</a> <br>
+                        <a href="mailto:sano17493@gmail.com" class="footerEmail">Почта@почта.домен</a> <br>
+                        <p class="footerText">Юридический адрес:</p> <br>
+                        <p class="footerText">Индекс, город, </p> <br>
+                        <p class="footerText">улица, дом, кабинет</p> <br>
+                    </div>
+                    <div class="footerBlock">
+                        <div class="footerLine">
+                            <img src="" alt="">
+                        </div>
+                        <p class="footerText">Режим работы:</p> <br>
+                        <p class="footerText">Пн-чт 8:00-17:00</p> <br>
+                        <p class="footerText">Пт 8:00-16:00</p> <br>
+                        <p class="footerText">Обед 12:00-13:00</p> <br>
+                    </div>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="footerBottomLink">
+                    <a href="#" target="_blank" class="VKlink">
+                        <img src="icons/pngwing.com.png" alt="VKlogo" class="imgVKlink">
+                    </a>
+                </div>
+                <div class="footerBottomText">
+                    © Государственное бюджетное учреждение ? области «Фонд пространственных данных ? области». ?—2023
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/modal.js"></script>
+
+</body>
+
+</html>

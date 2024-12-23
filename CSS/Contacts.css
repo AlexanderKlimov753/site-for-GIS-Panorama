@@ -1,0 +1,8 @@
+.contacts > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts > ul > li {
+   margin-bottom: 15px;
+}

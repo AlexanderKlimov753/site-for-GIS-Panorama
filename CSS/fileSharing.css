@@ -1,0 +1,160 @@
+.fileSharingTitle {
+  text-align: center;
+}
+
+.fileSharingStatement, .fileSharingFiles {
+  border: 1px solid black;
+}
+
+.fileSharingText {
+  color: black;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.fileSharingFiles-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*.fileSharingFiles-Box-Load, .fileSharingFiles-Box-Upload {
+  border: 1px solid black;
+}*/
+
+.fileSharingFiles-Box-Load {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#imageInput {
+  width: 50%;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  Justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+#preview {
+  max-width : 100%;
+  max-height : 100%;
+}
+
+.fileSharingFiles-Box-Upload {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileSharingFileSlideContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*.fileSharingLine {
+  border: 1px dotted black;
+  margin-bottom: 20px;
+  width: 100%;
+}
+*/
+
+/*слайдер*/
+.fileSharingFileSlider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px
+}
+
+#fileSharingBtnPrev, #fileSharingBtnNext {
+  /*position: absolute;
+  left: 50.75px;
+  top: 49.04px;
+  height: 74.56px;
+  width: 37.28px;*/
+  cursor: pointer;
+  transition: opacity .2s ease-in-out;
+}
+
+.fileSharingBtnPrev:hover, .fileSharingBtnNext:hover {
+  cursor: pointer;
+}
+
+#fileSharingBtnNext {
+  left: auto;
+  right:50.75px ;
+}
+
+.fileSharingFileSlide {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.fileSharingFileSlide.active {
+  display: block;
+}
+
+/*.slideText {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+  color: #050505;
+  margin-bottom: 15px;
+  width: 150px;
+}
+
+.slideContent {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.slideLink {
+  text-align: center;
+}
+
+.slideLinkBottom {
+  margin: 0;
+}*/
+
+.fileSharingFileSliderDots {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.fileSharingFileSliderDot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fileSharingFileSliderDot:hover {
+  background-color: #717171;
+}
+
+.fileSharingFileSliderDot.active {
+  background-color: darkred;
+}
+
+.fileSharingBtnPrev, .fileSharingBtnNext {
+  padding: 25px 15px 0 15px;
+}
+
+
+
+

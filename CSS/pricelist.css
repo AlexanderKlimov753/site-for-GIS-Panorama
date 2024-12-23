@@ -1,0 +1,17 @@
+﻿.pricelist {
+    display: flex;
+    flex-direction: column;
+}
+
+.pricelistTitle {
+    text-align: center;
+    list-style-type: disc;
+}
+
+.pricelistList {
+    list-style-type: disc;
+}
+
+.pricelistList > li {
+    margin-bottom: 15px;
+}

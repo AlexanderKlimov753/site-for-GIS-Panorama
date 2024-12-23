@@ -1,0 +1,74 @@
+.registrationTitle {
+    text-align: center;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+    /* �������� ���� �����, ������� �������� ������ ��� ��������: */
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* ������ ��� ���� �� ���������: */
+.registrationTab {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#registrationPrevBtn {
+    background-color: #bbbbbb;
+}
+
+/* �������� �����, ������� ���������� ���� �����: */
+
+.registrationSteps {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.registrationStep {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.registrationStep.active {
+    opacity: 1;
+ }
+
+    /* �������� ����, ������� ��������� � �������������: */
+.registrationStep.finish {
+    background-color: #4CAF50;
+}

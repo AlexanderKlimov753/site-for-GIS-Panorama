@@ -1,0 +1,12 @@
+﻿.MatAndInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.MatAndInfoTitle {
+    text-align: center;
+}
+
+.MatAndInfoList > li {
+    margin-bottom: 15px;
+}

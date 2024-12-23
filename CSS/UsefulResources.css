@@ -1,0 +1,8 @@
+.usefulResources > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.usefulResources > ul > li {
+    margin-bottom: 15px;
+}

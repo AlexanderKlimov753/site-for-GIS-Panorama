@@ -1,0 +1,161 @@
+.ModalCab {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, 0.56);
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-name: fadeIn;
+    z-index:3; 
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+   
+.ModalCab:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 360px;
+    background: #A6C9FF;
+    z-index: 100;
+}
+
+.modalPost {
+    height: 360px;
+}
+
+.modalClose {
+    position: absolute;
+    font-size: 35px;
+    width: 35px;
+    height: 35px;
+    left: 342px;
+    top: 15px;
+    text-decoration: none;
+    text-align: center;
+    color: #070707;
+    cursor: pointer;
+    padding: 0px;
+    border: 0px;
+    background-color: #A6C9FF;
+}
+
+.modalClose:hover { 
+   color: rgb(243, 13, 13);
+}
+
+p {
+    font-family: 'Roboto';
+    font-style: normal;
+    height: 45px;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    text-align: center;  
+    margin: 0;
+}
+
+.modal__subtitle {
+    padding-top: 70px;
+    border-left-width: 25px;
+    padding-left: 45px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+#FormControlInputEmail, #FormControlInputText {
+    display: block;
+    width: 87%;
+    height: 50%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.exampleFormControlInput1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.modalBtnEnter , .modalBtnReg {
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 7px 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.modalBtnEnter {
+    border-color: #4CAF50;
+    color: green;
+}
+
+.modalBtnEnter:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.modalBtnReg {
+    border-color: #f44336;
+    color: red
+}
+
+.modalBtnReg:hover {
+    background: #f44336;
+    color: white;
+}
+
+.modalBtns {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    height: 18%;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.cancelbtn {
+    height: 31px;
+    width: 70px;
+    background-color: #f44336;
+    cursor: pointer;
+    padding:0px;
+}
+
+.modalFooterPsw {
+    color: cornflowerblue;
+}
